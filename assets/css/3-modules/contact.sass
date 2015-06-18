@@ -1,0 +1,42 @@
+.section-contact
+	text-align: center
+	margin-top: 0
+
+
+.social-links 
+	max-width: 700px
+	margin: 0 auto 
+	padding-bottom: 80px
+	+display(flex)
+	+justify-content(space-around)
+	+flex-wrap(wrap)
+
+	a
+		display: block
+		background: $accent
+		+size(50px)
+		line-height: 50px
+		color: white
+		font-size: 28px
+		margin: 20px
+		+transition()
+
+		&:hover
+			+transform(scale(1.2))
+
+.bar
+	width: 250px 
+	height: 0
+	border-top: 4px solid $accentpaperclip
+	margin: 0 auto 100px
+
+.biglink
+	display: inline-block
+	color: $accent	
+	font:
+		size: 4em
+		weight: lighter
+
+	@media screen and (max-width: 513px)
+		font-size: 3em
+	
